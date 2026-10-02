@@ -33,6 +33,7 @@ trait CartResponses
             'notification' => [
                 'className' => 'notification-cart bz-toast',
                 'position' => 'tr',
+                'timeout' => 6000,
                 'title' => $title,
                 'image' => thumb($image, 80, 80),
                 'image2x' => thumb($image, 160, 160),
