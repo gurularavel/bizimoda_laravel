@@ -3,8 +3,9 @@
    Journal3-ün "footer .grid-row-*" qaydalarından asılı deyil; yalnız bz- sinifləri.
    ========================================================================== */
 
-.bz-footer-banner { width: 100%; }
-.bz-footer-banner img { display: block; width: 100%; height: auto; }
+.bz-footer-banner { width: 100%; text-align: center; }
+.bz-footer-banner a { display: block; }
+.bz-footer-banner img { display: block; width: auto !important; max-width: 100%; height: auto; margin: 0 auto; }
 
 footer.bz-footer {
   display: block !important;
