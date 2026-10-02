@@ -64,7 +64,7 @@ class CheckoutController extends Controller
             'first_name' => 'required|string|max:64',
             'last_name' => 'nullable|string|max:64',
             'email' => 'nullable|email|max:120',
-            'phone' => ['required', 'string', 'max:30', 'regex:/^[0-9 +()\-]{7,}$/'],
+            'phone' => ['required', 'string', 'max:30', 'regex:/^\+994[0-9]{9}$/'],
             'city' => 'nullable|string|max:120',
             'address' => 'required|string|max:255',
             'comment' => 'nullable|string|max:2000',

@@ -21,8 +21,8 @@ class FormController extends Controller
     public function send(Request $request, string $type, OrderService $orders)
     {
         $rules = $type === 'one_click'
-            ? ['name' => 'required|string|max:64', 'phone' => ['required', 'string', 'max:30', 'regex:/^[0-9 +()\-]{7,}$/'], 'message' => 'nullable|string|max:2000']
-            : ['name' => 'required|string|max:64', 'email' => 'required|email|max:120', 'phone' => 'nullable|string|max:30', 'subject' => 'nullable|string|max:120', 'message' => 'required|string|min:5|max:5000'];
+            ? ['name' => 'required|string|max:64', 'phone' => ['required', 'string', 'max:30', 'regex:/^\+994[0-9]{9}$/'], 'message' => 'nullable|string|max:2000']
+            : ['name' => 'required|string|max:64', 'email' => 'required|email|max:120', 'phone' => ['nullable', 'string', 'max:30', 'regex:/^\+994[0-9]{9}$/'], 'subject' => 'nullable|string|max:120', 'message' => 'required|string|min:5|max:5000'];
 
         $validator = Validator::make($request->all(), $rules, [], [
             'name' => __('Ad'), 'email' => __('E-mail'), 'phone' => __('Telefon'), 'message' => __('Mətn'),

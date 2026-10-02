@@ -54,6 +54,7 @@
 <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js?v=14218c54"></script>
 <script src="catalog/view/javascript/common.js?v={{ filemtime(public_path('catalog/view/javascript/common.js')) }}"></script>
 <script src="catalog/view/theme/journal3/js/bridge.js?v={{ filemtime(public_path('catalog/view/theme/journal3/js/bridge.js')) }}"></script>
+<script src="catalog/view/theme/journal3/js/bizimoda-phone.js?v={{ filemtime(public_path('catalog/view/theme/journal3/js/bizimoda-phone.js')) }}"></script>
 {!! setting('site.head_scripts') !!}
 @stack('head')
 </head>

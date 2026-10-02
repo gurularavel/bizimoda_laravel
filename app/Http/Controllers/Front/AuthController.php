@@ -52,7 +52,7 @@ class AuthController extends Controller
             'first_name' => 'required|string|max:64',
             'last_name' => 'nullable|string|max:64',
             'email' => 'required|email|max:120|unique:users,email',
-            'phone' => 'required|string|max:30',
+            'phone' => ['required', 'string', 'max:30', 'regex:/^\+994[0-9]{9}$/'],
             'password' => ['required', 'confirmed', PasswordRule::min(6)],
             'newsletter' => 'nullable|boolean',
         ], [], [

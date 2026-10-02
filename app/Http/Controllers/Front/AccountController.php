@@ -36,7 +36,7 @@ class AccountController extends Controller
         $data = $request->validate([
             'name' => 'required|string|max:128',
             'email' => ['required', 'email', 'max:120', Rule::unique('users')->ignore($user->id)],
-            'phone' => 'nullable|string|max:30',
+            'phone' => ['nullable', 'string', 'max:30', 'regex:/^\+994[0-9]{9}$/'],
             'newsletter' => 'nullable|boolean',
         ]);
         $user->update($data + ['newsletter' => $request->boolean('newsletter')]);
@@ -78,7 +78,7 @@ class AccountController extends Controller
         $data = $request->validate([
             'first_name' => 'required|string|max:64',
             'last_name' => 'nullable|string|max:64',
-            'phone' => 'nullable|string|max:30',
+            'phone' => ['nullable', 'string', 'max:30', 'regex:/^\+994[0-9]{9}$/'],
             'city' => 'nullable|string|max:120',
             'address' => 'required|string|max:255',
             'is_default' => 'nullable|boolean',
