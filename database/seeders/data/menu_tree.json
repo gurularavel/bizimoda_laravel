@@ -1,0 +1,619 @@
+[
+    {
+        "title": "Yataq otağı",
+        "href": "https://bizimoda.az/yataq-otagi",
+        "groups": [
+            {
+                "title": "Yataq mebelləri",
+                "links": [
+                    [
+                        "Yataq dəstləri",
+                        "https://bizimoda.az/yataq-destleri"
+                    ],
+                    [
+                        "Çarpayılar",
+                        "https://bizimoda.az/carpayilar-y"
+                    ],
+                    [
+                        "Dolablar",
+                        "https://bizimoda.az/dolablar-y"
+                    ],
+                    [
+                        "Trümolar",
+                        "https://bizimoda.az/trumolar-y"
+                    ],
+                    [
+                        "Tumbalar",
+                        "https://bizimoda.az/tumbalar-y"
+                    ],
+                    [
+                        "Matraslar",
+                        "https://bizimoda.az/matraslar-y"
+                    ]
+                ]
+            },
+            {
+                "title": "Ev tekstilləri",
+                "links": [
+                    [
+                        "Yataq setləri",
+                        "https://bizimoda.az/yataq-setleri-y"
+                    ],
+                    [
+                        "Çarpayı örtükləri",
+                        "https://bizimoda.az/carpayi-ortukleri-y"
+                    ],
+                    [
+                        "Yastıqlar",
+                        "https://bizimoda.az/yastiqlar-y"
+                    ],
+                    [
+                        "Yorğanlar",
+                        "https://bizimoda.az/yorganlar-y"
+                    ],
+                    [
+                        "Pike dəstləri",
+                        "https://bizimoda.az/pike-destleri-y"
+                    ],
+                    [
+                        "Xalılar",
+                        "https://bizimoda.az/xalilar-y"
+                    ]
+                ]
+            },
+            {
+                "title": "Dekorlar",
+                "links": [
+                    [
+                        "Boy aynaları",
+                        "https://bizimoda.az/boy-aynalari-y"
+                    ],
+                    [
+                        "Divar kağızları",
+                        "https://bizimoda.az/divar-kagizlari-y"
+                    ],
+                    [
+                        "Lampalar",
+                        "https://bizimoda.az/lampalar-y"
+                    ],
+                    [
+                        "Divar rəsmləri",
+                        "https://bizimoda.az/divar-resmleri-y"
+                    ],
+                    [
+                        "Puflar",
+                        "https://bizimoda.az/puflar-y"
+                    ],
+                    [
+                        "Dekorativ yastıqlar",
+                        "https://bizimoda.az/dekorativ-yastiqlar-y"
+                    ]
+                ]
+            }
+        ],
+        "banner": [
+            "https://bizimoda.az/index.php?route=product/special",
+            "https://bizimoda.az/image/cache/catalog/banner-small-2-385x425w.png"
+        ]
+    },
+    {
+        "title": "İstirahət otağı",
+        "href": "https://bizimoda.az/istirahet-otagi",
+        "groups": [
+            {
+                "title": "Yumşaq mebellər",
+                "links": [
+                    [
+                        "Divan dəstləri",
+                        "https://bizimoda.az/divan-destleri-i"
+                    ],
+                    [
+                        "Künc divanlar",
+                        "https://bizimoda.az/kunc-divanlar-i"
+                    ],
+                    [
+                        "Divanlar",
+                        "https://bizimoda.az/divanlar-i"
+                    ],
+                    [
+                        "Kreslolar",
+                        "https://bizimoda.az/kreslolar-i"
+                    ],
+                    [
+                        "Açılan kreslolar",
+                        "https://bizimoda.az/açılan-kreslolar-i"
+                    ],
+                    [
+                        "Puflar",
+                        "https://bizimoda.az/puflar-io"
+                    ],
+                    [
+                        "Mətbəx divanları",
+                        "https://bizimoda.az/metbex-divanlari-i"
+                    ],
+                    [
+                        "Jurnal Masaları",
+                        "https://bizimoda.az/jurnal-masalar-i"
+                    ],
+                    [
+                        "Masalar",
+                        "https://bizimoda.az/masalar-i"
+                    ],
+                    [
+                        "",
+                        ""
+                    ]
+                ]
+            },
+            {
+                "title": "Ev tekstilləri",
+                "links": [
+                    [
+                        "Divan örtükləri və odeyallar",
+                        "https://bizimoda.az/divan-ortukleri-ve-odeyallar"
+                    ],
+                    [
+                        "Süfrələr",
+                        "https://bizimoda.az/sufreler-i"
+                    ],
+                    [
+                        "Xalçalar",
+                        "https://bizimoda.az/xalcalar-i"
+                    ]
+                ]
+            },
+            {
+                "title": "Dekorlar",
+                "links": [
+                    [
+                        "Boy aynaları",
+                        "https://bizimoda.az/boy-aynalari-i"
+                    ],
+                    [
+                        "Divar kağızları",
+                        "https://bizimoda.az/divar-kagizlari"
+                    ],
+                    [
+                        "Lampalar",
+                        "https://bizimoda.az/lampalar-i"
+                    ],
+                    [
+                        "Divar rəsmləri",
+                        "https://bizimoda.az/divar-resimleri-i"
+                    ],
+                    [
+                        "Puflar",
+                        "https://bizimoda.az/puflar-i"
+                    ],
+                    [
+                        "Dekorativ yastıqlar",
+                        "https://bizimoda.az/dekorativ-yastiqlar-i"
+                    ],
+                    [
+                        "Dekorlar",
+                        "https://bizimoda.az/dekorlar-io"
+                    ],
+                    [
+                        "Lyustralar",
+                        "https://bizimoda.az/lyustralar-i"
+                    ]
+                ]
+            }
+        ],
+        "banner": null
+    },
+    {
+        "title": "Qonaq otağı",
+        "href": "https://bizimoda.az/qonaq-otagi-q",
+        "groups": [
+            {
+                "title": "Mebellər",
+                "links": [
+                    [
+                        "Qonaq dəstləri",
+                        "https://bizimoda.az/qonaq-destleri"
+                    ],
+                    [
+                        "Masalar",
+                        "https://bizimoda.az/masalar-q"
+                    ],
+                    [
+                        "Stullar",
+                        "https://bizimoda.az/stullar-q"
+                    ],
+                    [
+                        "Divan dəstləri",
+                        "https://bizimoda.az/divan-destleri-q"
+                    ],
+                    [
+                        "Kamodlar",
+                        "https://bizimoda.az/kamodlar-q"
+                    ],
+                    [
+                        "Bar dolablar",
+                        "https://bizimoda.az/bar-dolablar-q"
+                    ],
+                    [
+                        "TV altları",
+                        "https://bizimoda.az/tv-altlari-q"
+                    ],
+                    [
+                        "Kitab rəfləri",
+                        "https://bizimoda.az/kitab-refleri-q"
+                    ]
+                ]
+            },
+            {
+                "title": "Ev tekstilləri",
+                "links": [
+                    [
+                        "Süfrələr",
+                        "https://bizimoda.az/sufreler-q"
+                    ],
+                    [
+                        "Xalçalar",
+                        "https://bizimoda.az/xalcalar-q"
+                    ]
+                ]
+            },
+            {
+                "title": "Dekorlar",
+                "links": [
+                    [
+                        "Boy aynaları",
+                        "https://bizimoda.az/boy-aynalari-q"
+                    ],
+                    [
+                        "Lyustralar",
+                        "https://bizimoda.az/lyustralar-q"
+                    ],
+                    [
+                        "Dekorlar",
+                        "https://bizimoda.az/dekorlar-q"
+                    ],
+                    [
+                        "Divar rəsmləri",
+                        "https://bizimoda.az/divar-resmleri-q"
+                    ],
+                    [
+                        "Divar kağızları",
+                        "https://bizimoda.az/divar-kagizlari-q"
+                    ],
+                    [
+                        "Puflar",
+                        "https://bizimoda.az/puflar-q"
+                    ]
+                ]
+            }
+        ],
+        "banner": null
+    },
+    {
+        "title": "Mətbəx/Yemək otağı",
+        "href": "https://bizimoda.az/metbex-yemek-otagi",
+        "groups": [
+            {
+                "title": "Mebellər",
+                "links": [
+                    [
+                        "Mətbəx mebelləri",
+                        "https://bizimoda.az/metbex-mebelleri-m"
+                    ],
+                    [
+                        "Mətbəx masaları",
+                        "https://bizimoda.az/metbex-masalari-m"
+                    ],
+                    [
+                        "Mətbəx stulları",
+                        "https://bizimoda.az/metbex-stullari-m"
+                    ],
+                    [
+                        "Mətbəx divanları",
+                        "https://bizimoda.az/metbex-divanlari-m"
+                    ]
+                ]
+            },
+            {
+                "title": "Ev tekstilləri",
+                "links": [
+                    [
+                        "Çay dəsmalları",
+                        "https://bizimoda.az/cay-desmallari-m"
+                    ],
+                    [
+                        "Süfrələr",
+                        "https://bizimoda.az/sufreler-m"
+                    ],
+                    [
+                        "Xalçalar",
+                        "https://bizimoda.az/xalcalar-m"
+                    ]
+                ]
+            },
+            {
+                "title": "Dekorlar",
+                "links": [
+                    [
+                        "Dekorlar",
+                        "https://bizimoda.az/dekorlar-mo"
+                    ],
+                    [
+                        "Mətbəx jalüzləri",
+                        "https://bizimoda.az/metbex-jaluzleri"
+                    ],
+                    [
+                        "Divar saatları",
+                        "https://bizimoda.az/divar-saatlari-m"
+                    ]
+                ]
+            }
+        ],
+        "banner": null
+    },
+    {
+        "title": "Uşaq otağı",
+        "href": "https://bizimoda.az/usaq-otagi",
+        "groups": [
+            {
+                "title": "Mebellər",
+                "links": [
+                    [
+                        "Gənc dəstləri",
+                        "https://bizimoda.az/genc-destleri"
+                    ],
+                    [
+                        "Təkli çarpayılar",
+                        "https://bizimoda.az/tekli-carpayilar-u"
+                    ],
+                    [
+                        "Matraslar",
+                        "https://bizimoda.az/matraslar-u"
+                    ],
+                    [
+                        "Gənc dolablar",
+                        "https://bizimoda.az/genc-dolablar"
+                    ],
+                    [
+                        "Çalışma masaları",
+                        "https://bizimoda.az/calisma-masalari-u"
+                    ],
+                    [
+                        "Oturacaqlar",
+                        "https://bizimoda.az/oturacaqlar-u"
+                    ],
+                    [
+                        "Trümolar",
+                        "https://bizimoda.az/trumolar-u"
+                    ]
+                ]
+            },
+            {
+                "title": "Ev tekstilləri",
+                "links": [
+                    [
+                        "Uşaq ev tekstilləri",
+                        "https://bizimoda.az/uşaq-ev-tekstilleri"
+                    ]
+                ]
+            },
+            {
+                "title": "Dekorlar",
+                "links": [
+                    [
+                        "Dekorlar",
+                        "https://bizimoda.az/dekorlar-uo"
+                    ],
+                    [
+                        "Ağıllı oyuncaqlar",
+                        "https://bizimoda.az/agilli-oyuncaqlar"
+                    ]
+                ]
+            }
+        ],
+        "banner": null
+    },
+    {
+        "title": "Evdə ofis",
+        "href": "https://bizimoda.az/evde-ofis",
+        "groups": [
+            {
+                "title": "Ofis mebelləri",
+                "links": [
+                    [
+                        "İş masaları",
+                        "https://bizimoda.az/is-masalari"
+                    ],
+                    [
+                        "Kürsülər",
+                        "https://bizimoda.az/kursuler"
+                    ],
+                    [
+                        "İş dolabları",
+                        "https://bizimoda.az/is-dolablari"
+                    ]
+                ]
+            },
+            {
+                "title": "Ev tekstilləri",
+                "links": [
+                    [
+                        "Xalılar",
+                        "https://bizimoda.az/xalilar-o"
+                    ],
+                    [
+                        "Döşəkçələr",
+                        "https://bizimoda.az/dosekceler-o"
+                    ]
+                ]
+            },
+            {
+                "title": "Dekorlar",
+                "links": [
+                    [
+                        "Dəftərxana",
+                        "https://bizimoda.az/defterxana"
+                    ],
+                    [
+                        "Lampalar",
+                        "https://bizimoda.az/lampalar"
+                    ]
+                ]
+            }
+        ],
+        "banner": null
+    },
+    {
+        "title": "Tək-tək mebellər",
+        "href": "https://bizimoda.az/tek-tek-mebeller",
+        "groups": [
+            {
+                "title": "Panellər",
+                "links": [
+                    [
+                        "Masalar",
+                        "https://bizimoda.az/masalar-t"
+                    ],
+                    [
+                        "Çarpayılar",
+                        "https://bizimoda.az/carpayilar-t"
+                    ],
+                    [
+                        "Dolablar",
+                        "https://bizimoda.az/dolablar-t"
+                    ],
+                    [
+                        "Kitab rəfləri",
+                        "https://bizimoda.az/kitab-refleri"
+                    ],
+                    [
+                        "Jurnal masalar",
+                        "https://bizimoda.az/jurnal-masalar-t"
+                    ]
+                ]
+            },
+            {
+                "title": "Yumşaq",
+                "links": [
+                    [
+                        "Divanlar",
+                        "https://bizimoda.az/divanlar-t"
+                    ],
+                    [
+                        "Kreslolar",
+                        "https://bizimoda.az/kreslolar-t"
+                    ],
+                    [
+                        "Puflar",
+                        "https://bizimoda.az/puflar-t"
+                    ],
+                    [
+                        "Matraslar",
+                        "https://bizimoda.az/matraslar-t"
+                    ]
+                ]
+            },
+            {
+                "title": "Dekorlar",
+                "links": [
+                    [
+                        "Dekorativ mebellər",
+                        "https://bizimoda.az/dekorativ-mebeller-t"
+                    ]
+                ]
+            }
+        ],
+        "banner": null
+    },
+    {
+        "title": "Ev tekstili",
+        "href": "https://bizimoda.az/ev-tekstilleri",
+        "groups": [
+            {
+                "title": "Yataq otağı",
+                "links": [
+                    [
+                        "Yataq nevresim dəstləri",
+                        "https://bizimoda.az/yataq-nevresim-destleri"
+                    ],
+                    [
+                        "Çarşaflar",
+                        "https://bizimoda.az/carsaflar"
+                    ],
+                    [
+                        "Pike dəstləri",
+                        "https://bizimoda.az/pike-destleri-e"
+                    ],
+                    [
+                        "Döşəklər",
+                        "https://bizimoda.az/dosekler"
+                    ],
+                    [
+                        "Alezlər",
+                        "https://bizimoda.az/alezler"
+                    ],
+                    [
+                        "Yorğanlar",
+                        "https://bizimoda.az/yorganlar-e"
+                    ],
+                    [
+                        "Yastıqlar",
+                        "https://bizimoda.az/yastiqlar-e"
+                    ],
+                    [
+                        "Yastıq üzləri",
+                        "https://bizimoda.az/yastiq-uzleri"
+                    ],
+                    [
+                        "Yataq örtükləri",
+                        "https://bizimoda.az/yataq-ortukleri"
+                    ],
+                    [
+                        "Odeyallar",
+                        "https://bizimoda.az/odeyallar"
+                    ]
+                ]
+            },
+            {
+                "title": "Qonaq otağı",
+                "links": [
+                    [
+                        "Süfrələr",
+                        "https://bizimoda.az/sufreler-e"
+                    ],
+                    [
+                        "Xalçalar",
+                        "https://bizimoda.az/xalcalar-e"
+                    ],
+                    [
+                        "Dekor yastıqlar",
+                        "https://bizimoda.az/dekor-yastiqlar"
+                    ]
+                ]
+            },
+            {
+                "title": "Digər",
+                "links": [
+                    [
+                        "Dəsmal qrupları",
+                        "https://bizimoda.az/desmal-qruplari"
+                    ],
+                    [
+                        "Hamam dəstləri",
+                        "https://bizimoda.az/hamam-destleri"
+                    ],
+                    [
+                        "Mətbəx dəsmalları",
+                        "https://bizimoda.az/metbex-desmallari"
+                    ]
+                ]
+            }
+        ],
+        "banner": null
+    },
+    {
+        "title": "Bütün məhsullar",
+        "href": "butun_mehsullar",
+        "groups": [],
+        "banner": null
+    }
+]

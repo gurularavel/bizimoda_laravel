@@ -1,0 +1,81 @@
+:root { --sidebar-w: 250px; --brand: #ed3237; }
+body { background: #f4f6f9; font-size: 14px; }
+.admin-wrap { display: flex; min-height: 100vh; }
+.admin-sidebar { width: var(--sidebar-w); background: #1f2533; color: #c9cfdc; position: fixed; inset: 0 auto 0 0; overflow-y: auto; z-index: 1030; transition: transform .2s; }
+.admin-sidebar .brand { display: flex; align-items: center; gap: 8px; padding: 18px 20px; border-bottom: 1px solid rgba(255,255,255,.06); text-decoration: none; }
+.admin-sidebar .brand img { height: 26px; filter: brightness(0) invert(1); }
+.admin-sidebar .brand span { color: #8a93a8; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+.admin-sidebar nav { padding: 10px 0 30px; }
+.admin-sidebar .nav-heading { font-size: 11px; text-transform: uppercase; color: #6c7489; padding: 16px 20px 6px; letter-spacing: .6px; }
+.admin-sidebar .nav-link { display: flex; align-items: center; gap: 10px; color: #c9cfdc; padding: 8px 20px; border-left: 3px solid transparent; }
+.admin-sidebar .nav-link:hover { background: rgba(255,255,255,.04); color: #fff; }
+.admin-sidebar .nav-link.active { background: rgba(237,50,55,.12); color: #fff; border-left-color: var(--brand); }
+.admin-sidebar .nav-link i { font-size: 16px; width: 18px; text-align: center; }
+.admin-main { margin-left: var(--sidebar-w); flex: 1; min-width: 0; }
+.admin-topbar { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 12px 24px; display: flex; align-items: center; gap: 12px; position: sticky; top: 0; z-index: 1020; }
+.admin-content { padding: 24px; }
+@media (max-width: 991px) {
+  .admin-sidebar { transform: translateX(-100%); }
+  .admin-sidebar.open { transform: none; }
+  .admin-main { margin-left: 0; }
+  .admin-content { padding: 16px; }
+}
+.card { border: 0; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+.card-header { background: #fff; font-weight: 600; }
+.table > :not(caption) > * > * { vertical-align: middle; }
+.table thead th { font-size: 12px; text-transform: uppercase; color: #6b7280; font-weight: 600; }
+.btn-brand { background: var(--brand); color: #fff; }
+.btn-brand:hover { background: #ca1f1f; color: #fff; }
+.trans-tabs .nav-link { padding: 2px 8px; font-size: 11px; font-weight: 600; position: relative; }
+.trans-tabs .dot-empty { position: absolute; top: 2px; right: 2px; width: 5px; height: 5px; border-radius: 50%; background: #f59e0b; }
+.image-preview { width: 90px; height: 90px; border: 1px dashed #ccd; border-radius: 6px; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #fafbfc; flex-shrink: 0; }
+.image-preview img { max-width: 100%; max-height: 100%; }
+.thumb-40 { width: 40px; height: 40px; object-fit: contain; border-radius: 4px; background: #fff; border: 1px solid #eee; }
+.stat-card .value { font-size: 26px; font-weight: 700; }
+.stat-card .label { color: #6b7280; font-size: 12px; text-transform: uppercase; }
+.sortable-ghost { opacity: .4; background: #fff4f4 !important; }
+.drag-handle { cursor: move; color: #9ca3af; }
+.tree-list, .tree-list ul { list-style: none; padding-left: 0; margin: 0; }
+.tree-list ul { padding-left: 28px; min-height: 6px; }
+.tree-item > .tree-row { display: flex; align-items: center; gap: 10px; background: #fff; border: 1px solid #e5e7eb; border-radius: 6px; padding: 8px 12px; margin-bottom: 6px; }
+.tree-item > .tree-row .meta { color: #9ca3af; font-size: 12px; }
+.tree-item.inactive > .tree-row { opacity: .55; }
+.badge-soft { background: #f3f4f6; color: #374151; font-weight: 500; }
+.set-items-table input { max-width: 90px; }
+.form-label { font-weight: 500; }
+.sticky-actions { position: sticky; bottom: 0; background: rgba(244,246,249,.95); padding: 12px 0; z-index: 10; border-top: 1px solid #e5e7eb; }
+.color-dot { display: inline-block; width: 16px; height: 16px; border-radius: 50%; border: 1px solid #ddd; vertical-align: middle; }
+.nav-tabs .nav-link { color: #4b5563; }
+.nav-tabs .nav-link.active { color: var(--brand); font-weight: 600; }
+.select2-container--bootstrap-5 .select2-selection { min-height: 38px; }
+
+/* ---- Yığılmış sidebar: yalnız ikonlar ---- */
+.admin-sidebar, .admin-main { transition: width .2s, margin-left .2s; }
+.admin-sidebar .brand-icon { display: none; height: 28px; }
+.admin-sidebar .nav-heading span { white-space: nowrap; }
+.admin-sidebar .nav-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (min-width: 992px) {
+  body.sidebar-collapsed { --sidebar-w: 68px; }
+  body.sidebar-collapsed .admin-sidebar { overflow-x: hidden; }
+  body.sidebar-collapsed .admin-sidebar .brand { justify-content: center; padding: 16px 0; }
+  body.sidebar-collapsed .admin-sidebar .brand-logo,
+  body.sidebar-collapsed .admin-sidebar .brand span { display: none; }
+  body.sidebar-collapsed .admin-sidebar .brand-icon { display: block; }
+  body.sidebar-collapsed .admin-sidebar .nav-heading { padding: 10px 0 4px; }
+  body.sidebar-collapsed .admin-sidebar .nav-heading span { display: none; }
+  body.sidebar-collapsed .admin-sidebar .nav-heading::after { content: ''; display: block; margin: 0 18px; border-top: 1px solid rgba(255,255,255,.1); }
+  body.sidebar-collapsed .admin-sidebar .nav-link { justify-content: center; padding: 10px 0; position: relative; }
+  body.sidebar-collapsed .admin-sidebar .nav-link i { font-size: 18px; width: auto; }
+  body.sidebar-collapsed .admin-sidebar .nav-text { display: none; }
+  body.sidebar-collapsed .admin-sidebar .nav-badge { position: absolute; top: 4px; right: 10px; font-size: 9px; padding: 2px 4px; margin: 0 !important; }
+}
+
+/* ---- Ağac (menyu/kateqoriya) accordion ---- */
+.tree-toggle { border: 0; background: none; padding: 0; width: 20px; color: #6b7280; line-height: 1; }
+.tree-toggle i { display: inline-block; transition: transform .15s; }
+.tree-toggle:hover { color: var(--brand); }
+.tree-toggle-spacer { display: inline-block; width: 20px; }
+.tree-item.is-collapsed > .tree-row .tree-toggle i { transform: rotate(-90deg); }
+.tree-item.is-collapsed > ul { display: none; }
+.tree-item.is-collapsed > .tree-row { box-shadow: 0 2px 0 -1px #fff, 0 3px 0 -1px #e5e7eb; }
+.tree-count { font-weight: 500; }

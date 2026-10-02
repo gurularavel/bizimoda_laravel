@@ -1,0 +1,108 @@
+/* ==========================================================================
+   bizimOda — Əlaqə səhifəsi
+   Forma journal.js-in AJAX göndərişi üçün .module-form/.btn-primary siniflərini saxlayır,
+   burada yalnız görünüşü .bz-contact daxilində yenidən qurulur.
+   ========================================================================== */
+
+.bz-contact { max-width: 1280px; margin: 0 auto; padding: 8px 24px 40px; color: var(--bz-text); font-family: var(--bz-font); }
+
+.bz-contact__head { max-width: 720px; margin-bottom: 32px; }
+.bz-contact__title { margin: 0 0 10px; font: 700 32px/1.2 var(--bz-head); color: var(--bz-ink); }
+.bz-contact__lead { margin: 0; font-size: 15px; line-height: 1.6; color: var(--bz-muted); }
+
+.bz-contact__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.bz-contact__actions .bz-btn { gap: 8px; height: 44px; }
+.bz-contact__wa { background: #25d366; color: #fff !important; }
+.bz-contact__wa:hover { background: #1ebe5b; }
+
+.bz-contact__grid {
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 24px; align-items: start;
+}
+
+/* Məlumat kartları */
+.bz-contact__info { display: grid; gap: 12px; }
+.bz-contact__card {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 20px; background: #fff; border: 1px solid var(--bz-line); border-radius: var(--bz-radius);
+}
+.bz-contact__ico {
+  display: inline-flex; flex: none; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border-radius: 50%; background: var(--bz-brand-soft); color: var(--bz-brand);
+}
+.bz-contact__label { margin-bottom: 4px; font: 700 12px/1.3 var(--bz-head); letter-spacing: .06em; text-transform: uppercase; color: var(--bz-muted); }
+.bz-contact__text { font-size: 15px; line-height: 1.55; color: var(--bz-ink); }
+
+.bz-contact__list { margin: 0; padding: 0; list-style: none; }
+.bz-contact__list li + li { margin-top: 2px; }
+.bz-contact__list a { font-size: 15px; font-weight: 600; color: var(--bz-ink) !important; text-decoration: none !important; }
+.bz-contact__list a:hover { color: var(--bz-brand) !important; }
+
+.bz-contact__tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 0; padding: 0; list-style: none; }
+.bz-contact__tags li { padding: 5px 10px; border-radius: 999px; background: var(--bz-soft); font-size: 13px; color: var(--bz-ink); }
+
+/* Forma kartı */
+.bz-contact__form .module-form {
+  padding: 28px; background: #fff; border: 1px solid var(--bz-line); border-radius: var(--bz-radius); box-shadow: var(--bz-shadow);
+}
+.bz-contact__form .module-title {
+  margin: 0 0 20px !important; padding: 0 !important; border: 0 !important;
+  font: 700 22px/1.3 var(--bz-head) !important; color: var(--bz-ink) !important; text-transform: none !important;
+}
+.bz-contact__form .module-title::after { display: none !important; }
+.bz-contact__form fieldset { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0; padding: 0; border: 0; }
+.bz-contact__form .form-group { display: block; margin: 0 !important; padding: 0 !important; }
+.bz-contact__form .form-group:nth-child(n+5) { grid-column: 1 / -1; }
+.bz-contact__form .form-group::before, .bz-contact__form .form-group::after { display: none; }
+.bz-contact__form .form-group > [class*="col-sm-"] { float: none; width: 100%; max-width: none; padding: 0; }
+.bz-contact__form .control-label {
+  display: block; width: auto; margin: 0 0 6px; padding: 0 !important; text-align: left !important;
+  font: 600 13px/1.3 var(--bz-font); color: var(--bz-ink);
+}
+.bz-contact__form .form-control {
+  width: 100%; height: 46px; padding: 0 14px; border: 1px solid var(--bz-line) !important; border-radius: var(--bz-radius-sm) !important;
+  background: #fff; box-shadow: none !important; font: 400 15px/1.4 var(--bz-font); color: var(--bz-ink);
+  transition: border-color .15s, box-shadow .15s;
+}
+.bz-contact__form textarea.form-control { height: auto; min-height: 140px; padding: 12px 14px; resize: vertical; }
+.bz-contact__form .form-control:focus { border-color: var(--bz-ink) !important; box-shadow: 0 0 0 3px rgba(29, 37, 48, .08) !important; outline: 0; }
+.bz-contact__form .has-error .form-control { border-color: var(--bz-brand) !important; }
+.bz-contact__form .text-danger { margin-top: 6px; font-size: 13px; }
+
+.bz-contact__form .buttons { margin: 20px 0 0 !important; padding: 0 !important; border: 0 !important; background: none !important; }
+.bz-contact__form .buttons .pull-right { float: none !important; }
+.bz-contact__form .btn-primary {
+  display: inline-flex; align-items: center; justify-content: center; width: 100%; height: 50px; padding: 0 24px;
+  border: 0 !important; border-radius: var(--bz-radius-sm) !important; background: var(--bz-brand) !important;
+  box-shadow: none !important; color: #fff !important; font: 600 15px/1 var(--bz-font) !important; text-transform: none !important;
+}
+.bz-contact__form .btn-primary:hover, .bz-contact__form .btn-primary:focus-visible { background: var(--bz-brand-dark) !important; }
+.bz-contact__form .btn-primary span::before, .bz-contact__form .btn-primary::before { display: none !important; }
+
+/* Əlavə məzmun və xəritə */
+.bz-contact__content {
+  margin-top: 24px; padding: 24px; background: var(--bz-soft); border-radius: var(--bz-radius); font-size: 15px; line-height: 1.6;
+}
+.bz-contact__content .content > :last-child { margin-bottom: 0; }
+.bz-contact__map { margin-top: 24px; overflow: hidden; border-radius: var(--bz-radius); }
+.bz-contact__map iframe { display: block; width: 100% !important; height: 380px; border: 0; }
+
+@media (max-width: 991px) {
+  .bz-contact__grid { grid-template-columns: 1fr; }
+  .bz-contact__info { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 767px) {
+  .bz-contact { padding: 4px 16px 24px; }
+  .bz-contact__head { margin-bottom: 20px; }
+  .bz-contact__title { font-size: 24px; }
+  .bz-contact__lead { font-size: 14px; }
+  .bz-contact__actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 8px; }
+  .bz-contact__actions .bz-btn { padding: 0 10px; font-size: 13px; }
+  .bz-contact__info { grid-template-columns: 1fr; gap: 10px; }
+  .bz-contact__card { padding: 16px; gap: 14px; }
+  .bz-contact__ico { width: 40px; height: 40px; }
+  .bz-contact__form .module-form { padding: 20px 16px; }
+  .bz-contact__form fieldset { grid-template-columns: 1fr; gap: 14px; }
+  .bz-contact__form .form-control { font-size: 16px; } /* iOS-da avtomatik zoom-un qarşısını alır */
+  .bz-contact__map iframe { height: 280px; }
+}

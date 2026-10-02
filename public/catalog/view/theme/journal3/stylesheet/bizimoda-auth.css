@@ -1,0 +1,148 @@
+/*
+ * bizimoda: giriş/qeydiyyat — ayrıca səhifələr və modal (iframe popup).
+ * bz-field / bz-btn / bz-check üslubları bizimoda-ui.css və bizimoda-checkout.css-dən gəlir.
+ */
+
+/* ---------- Ümumi forma ---------- */
+.bz-auth-form { display: flex; flex-direction: column; gap: 14px; }
+.bz-auth-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.bz-field__row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.bz-field__hint { font-size: 12px; color: var(--bz-muted); }
+.bz-auth-link { font: 500 12.5px/1.3 var(--bz-font); color: var(--bz-brand) !important; text-decoration: none !important; }
+.bz-auth-link:hover { text-decoration: underline !important; }
+.bz-auth-check { margin: 0 !important; padding: 2px 0 !important; align-items: flex-start !important; }
+.bz-auth-check:hover { background: none; }
+.bz-auth-check .links-text { font-size: 13px; line-height: 1.45; }
+.bz-auth-form .bz-btn--block { margin-top: 4px; }
+.bz-auth-form .bz-btn.is-loading { opacity: .7; pointer-events: none; }
+.bz-auth-form .bz-alert { margin: 0; }
+.bz-alert--success { background: var(--bz-green-soft); color: var(--bz-green); }
+
+.bz-pass { position: relative; }
+.bz-pass input { padding-right: 46px !important; }
+.bz-pass__toggle {
+  position: absolute; top: 50%; right: 6px; transform: translateY(-50%); display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; padding: 0; border: 0; border-radius: 8px; background: none; color: var(--bz-muted); cursor: pointer;
+}
+.bz-pass__toggle:hover { background: var(--bz-soft); color: var(--bz-ink); }
+.bz-pass__hide { display: none; }
+.bz-pass__toggle.is-visible .bz-pass__show { display: none; }
+.bz-pass__toggle.is-visible .bz-pass__hide { display: block; }
+
+.bz-auth-social { margin-top: 18px; }
+.bz-auth-divider { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-size: 12.5px; color: var(--bz-muted); }
+.bz-auth-divider::before, .bz-auth-divider::after { content: ''; flex: 1; height: 1px; background: var(--bz-line); }
+.bz-auth-social__btns { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }
+.bz-auth-social__btns .bz-btn { height: 44px; }
+
+/* ---------- Ayrıca səhifə ---------- */
+.bz-auth-route h1.page-title { display: none !important; }
+.bz-auth-page { display: flex; justify-content: center; padding: 10px 0 50px; }
+.bz-auth-card {
+  display: grid; grid-template-columns: 5fr 6fr; width: 100%; max-width: 980px; overflow: hidden;
+  background: #fff; border: 1px solid var(--bz-line); border-radius: 20px; box-shadow: 0 30px 60px -30px rgba(16, 24, 40, .25);
+}
+.bz-auth-route .bz-auth-card:has(.bz-auth-grid + .bz-field) { max-width: 1040px; }
+.bz-auth-card__brand {
+  position: relative; display: flex; align-items: flex-end; padding: 40px; color: #fff; overflow: hidden;
+  background: radial-gradient(120% 90% at 0% 0%, #f2545a 0%, var(--bz-brand) 45%, #a3161c 100%);
+}
+.bz-auth-card__brand::before {
+  content: ''; position: absolute; right: -80px; top: -80px; width: 280px; height: 280px; border-radius: 50%;
+  border: 40px solid rgba(255, 255, 255, .08);
+}
+.bz-auth-card__brand::after {
+  content: ''; position: absolute; left: -60px; bottom: -120px; width: 260px; height: 260px; border-radius: 50%; background: rgba(255, 255, 255, .06);
+}
+.bz-auth-card__brand-inner { position: relative; z-index: 1; }
+.bz-auth-card__logo { margin-bottom: 60px; font: 800 26px/1 var(--bz-head); letter-spacing: -.01em; }
+.bz-auth-card__brand h2 { margin: 0 0 10px; font: 700 28px/1.2 var(--bz-head); color: #fff; }
+.bz-auth-card__brand p { margin: 0 0 24px; font-size: 15px; line-height: 1.5; color: rgba(255, 255, 255, .85); }
+.bz-auth-perks { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.bz-auth-perks li { position: relative; padding-left: 30px; font-size: 14.5px; line-height: 1.4; }
+.bz-auth-perks li::before {
+  content: ''; position: absolute; left: 0; top: 0; width: 20px; height: 20px; border-radius: 50%; background: rgba(255, 255, 255, .2)
+    url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22%3E%3Cpath d=%22M6 12.5l4 4L18 8.5%22 fill=%22none%22 stroke=%22white%22 stroke-width=%223%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E") center / 12px no-repeat;
+}
+.bz-auth-card__body { padding: 44px 48px; }
+.bz-auth-card__title { margin: 0 0 6px !important; font: 700 26px/1.25 var(--bz-head) !important; color: var(--bz-ink) !important; }
+.bz-auth-card__sub { margin: 0 0 24px; font-size: 14px; color: var(--bz-muted); }
+.bz-auth-card__sub a { font-weight: 600; color: var(--bz-brand) !important; }
+
+@media (max-width: 860px) {
+  .bz-auth-card { grid-template-columns: 1fr; }
+  .bz-auth-card__brand { padding: 28px 24px; }
+  .bz-auth-card__logo { margin-bottom: 16px; font-size: 20px; }
+  .bz-auth-card__brand h2 { font-size: 22px; }
+  .bz-auth-perks { display: none; }
+  .bz-auth-card__brand p { margin: 0; }
+}
+@media (max-width: 560px) {
+  .bz-auth-page { padding: 0 0 30px; }
+  .bz-auth-card { border-radius: 16px; }
+  .bz-auth-card__body { padding: 24px 18px; }
+  .bz-auth-card .bz-auth-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Modal (iframe daxili) ---------- */
+html.popup-login body, html.popup-register body { background: #fff !important; }
+html.popup-login .site-wrapper, html.popup-register .site-wrapper { padding: 0 !important; }
+.bz-auth-modal { padding: 28px 28px 24px; }
+.bz-auth-modal__head { margin-bottom: 18px; text-align: center; }
+.bz-auth-modal__title { margin: 0 0 6px; font: 700 22px/1.25 var(--bz-head); color: var(--bz-ink); }
+.bz-auth-modal__head p { margin: 0; font-size: 13.5px; line-height: 1.45; color: var(--bz-muted); }
+.bz-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-bottom: 20px; padding: 4px; border-radius: 12px; background: var(--bz-soft); }
+.bz-tabs__tab {
+  height: 40px; border: 0; border-radius: 9px; background: none; font: 600 14px/1 var(--bz-font); color: var(--bz-muted); cursor: pointer;
+  transition: background-color .15s, color .15s, box-shadow .15s;
+}
+.bz-tabs__tab:hover { color: var(--bz-ink); }
+.bz-tabs__tab.is-active { background: #fff; color: var(--bz-ink); box-shadow: 0 1px 3px rgba(16, 24, 40, .12); }
+.bz-auth-modal [hidden] { display: none !important; }
+@media (max-width: 380px) {
+  .bz-auth-modal { padding: 22px 16px 18px; }
+  .bz-auth-modal .bz-auth-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Modal çərçivəsi (valideyn səhifədə) ---------- */
+.popup-login .popup-container, .popup-register .popup-container {
+  width: 460px !important; max-width: calc(100vw - 24px) !important; padding: 0 !important; overflow: hidden;
+  border-radius: 18px !important; background: #fff !important; box-shadow: 0 40px 80px -20px rgba(16, 24, 40, .45) !important;
+}
+.popup-login .popup-body, .popup-register .popup-body { padding: 0 !important; }
+.popup-login .popup-inner-body, .popup-register .popup-inner-body {
+  max-height: calc(100vh - 48px) !important; overflow-y: auto !important; transition: height .2s ease;
+}
+.popup-login .popup-inner-body iframe, .popup-register .popup-inner-body iframe { display: block; width: 100%; }
+.popup-login .popup-close, .popup-register .popup-close {
+  top: 12px !important; right: 12px !important; width: 34px !important; height: 34px !important; z-index: 5;
+  border-radius: 50% !important; background: var(--bz-soft) !important; border: 0 !important; box-shadow: none !important;
+}
+.popup-login .popup-close::before, .popup-register .popup-close::before { color: var(--bz-ink) !important; font-size: 16px !important; }
+.popup-login .popup-bg, .popup-register .popup-bg { background: rgba(16, 24, 40, .55) !important; backdrop-filter: blur(2px); }
+
+/* Bağlama düyməsi iframe-in üstündə qalsın */
+.popup-login .popup-body, .popup-register .popup-body { position: relative; z-index: 1; }
+.popup-login .popup-container > .popup-close, .popup-register .popup-container > .popup-close { position: absolute !important; z-index: 20 !important; }
+
+/* ---------- Şifrə bərpası ---------- */
+.bz-auth-steps { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; counter-reset: bzstep; }
+.bz-auth-steps li { position: relative; display: flex; align-items: center; gap: 12px; font-size: 14.5px; line-height: 1.35; color: rgba(255, 255, 255, .7); counter-increment: bzstep; }
+.bz-auth-steps li::before {
+  content: counter(bzstep); display: inline-flex; align-items: center; justify-content: center; flex: none; width: 28px; height: 28px; border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, .45); font-weight: 700; font-size: 13px;
+}
+.bz-auth-steps li.is-current { color: #fff; font-weight: 600; }
+.bz-auth-steps li.is-current::before { background: #fff; border-color: #fff; color: var(--bz-brand); }
+.bz-auth-steps li.is-done { color: rgba(255, 255, 255, .9); }
+.bz-auth-steps li.is-done::before { content: '\2713'; background: rgba(255, 255, 255, .2); border-color: transparent; }
+
+.bz-auth-back { display: inline-flex; align-items: center; gap: 6px; margin-top: 18px; font: 500 13.5px/1 var(--bz-font); color: var(--bz-text) !important; text-decoration: none !important; }
+.bz-auth-back:hover { color: var(--bz-brand) !important; }
+
+.bz-auth-done { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 10px 0; }
+.bz-auth-done__icon { display: inline-flex; align-items: center; justify-content: center; width: 72px; height: 72px; margin-bottom: 18px; border-radius: 50%; background: var(--bz-green-soft); color: var(--bz-green); }
+.bz-auth-done .bz-auth-card__sub { max-width: 380px; line-height: 1.55; }
+.bz-auth-done .bz-auth-card__sub b { color: var(--bz-ink); }
+.bz-auth-done__again { margin-top: 14px; }
+@media (max-width: 860px) { .bz-auth-steps { display: none; } }
