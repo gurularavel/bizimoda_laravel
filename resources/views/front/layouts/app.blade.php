@@ -98,13 +98,17 @@
 
 @if($notification = setting_t('site.notification_text'))
 <div class="notification-wrapper notification-wrapper-bottom">
-  <div class="module module-notification module-notification-137 notification" data-options='{"position":null,"title":"","cookie":"{{ $journalConfig['notification'][0]['c'] ?? '' }}"}'>
-    <button class="btn notification-close"></button>
-    <div class="notification-content">
-      <div>
-        <div class="notification-title"></div>
-        <div class="notification-text">{!! nl2br(e($notification)) !!}</div>
+  <div class="module module-notification module-notification-137 notification bz-cookie" role="dialog" aria-live="polite" aria-label="{{ __('Çərəzlər') }}" data-options='{"position":null,"title":"","cookie":"{{ $journalConfig['notification'][0]['c'] ?? '' }}"}'>
+    <button type="button" class="btn notification-close bz-cookie__close" aria-label="{{ __('Bağla') }}"></button>
+    <div class="notification-content bz-cookie__content">
+      <span class="bz-cookie__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9 3.5 3.5 0 0 1-4-3.5 3.5 3.5 0 0 1-3.5-3.5A2.5 2.5 0 0 1 12 3z"/><circle cx="8.5" cy="10.5" r=".9" fill="currentColor"/><circle cx="12.5" cy="15.5" r=".9" fill="currentColor"/><circle cx="16.5" cy="13" r=".6" fill="currentColor"/><circle cx="8" cy="15" r=".6" fill="currentColor"/></svg>
+      </span>
+      <div class="bz-cookie__body">
+        <div class="notification-title bz-cookie__title">{{ __('Çərəzlərdən istifadə edirik') }}</div>
+        <div class="notification-text bz-cookie__text">{!! nl2br(e($notification)) !!}</div>
       </div>
+      <button type="button" class="bz-cookie__accept" data-bz-cookie-accept>{{ __('Qəbul edirəm') }}</button>
     </div>
   </div>
 </div>

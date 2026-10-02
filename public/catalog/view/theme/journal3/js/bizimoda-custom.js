@@ -562,3 +562,8 @@ document.head.appendChild(style);
     });
     
 })(jQuery);
+
+// Cookie bildirişi: "Qəbul edirəm" Journal-ın öz bağlama düyməsini işə salır (n-<hash> cookie-si orada yazılır).
+$(document).on('click', '[data-bz-cookie-accept]', function () {
+    $(this).closest('.bz-cookie').find('.notification-close').trigger('click');
+});
