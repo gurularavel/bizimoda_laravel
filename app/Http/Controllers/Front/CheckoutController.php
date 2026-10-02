@@ -128,7 +128,7 @@ class CheckoutController extends Controller
     /** Sifarişi yalnız onu verən sessiya/istifadəçi görə bilər */
     protected function ownOrder(string $number): Order
     {
-        $order = Order::query()->where('number', $number)->with('items.components')->firstOrFail();
+        $order = Order::query()->where('number', $number)->with(['items.components', 'items.product.images'])->firstOrFail();
         $user = Auth::guard('web')->user();
 
         abort_unless(in_array($number, session('my_orders', []), true) || ($user && $order->user_id === $user->id), 404);

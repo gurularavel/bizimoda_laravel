@@ -251,5 +251,18 @@
     "istəyə bağlı": "optional",
     "Rəng, ölçü və ya sualınız": "Colour, size or your question",
     "Ödəniş məhsulu təhvil alanda edilir.": "Payment is made on delivery.",
-    "Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.": "Something went wrong. Please try again."
+    "Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.": "Something went wrong. Please try again.",
+    "Təşəkkür edirik, :name! Operatorumuz sifarişi təsdiqləmək üçün qısa müddətdə sizinlə əlaqə saxlayacaq.": "Thank you, :name! Our operator will contact you shortly to confirm the order.",
+    "Kartla ödəniş tamamlanmadı. Sifarişiniz yadda saxlanılıb — operatorumuz sizinlə əlaqə saxlayacaq və ya bizə özünüz yaza bilərsiniz.": "The card payment was not completed. Your order has been saved — our operator will contact you, or you can write to us yourself.",
+    "Sifariş nömrəsi": "Order number",
+    "Sifariş məlumatları": "Order details",
+    "Alıcı": "Customer",
+    "Bundan sonra nə olacaq?": "What happens next?",
+    "Təsdiq zəngi": "Confirmation call",
+    "Operatorumuz sifarişin detallarını dəqiqləşdirmək üçün sizə zəng edəcək.": "Our operator will call you to confirm the order details.",
+    "Hazırlıq": "Preparation",
+    "Məhsullar yoxlanılır və çatdırılmaya hazırlanır.": "Your items are checked and prepared for delivery.",
+    "Kuryer razılaşdırılmış vaxtda sifarişi ünvanınıza gətirəcək.": "The courier will bring your order at the agreed time.",
+    "Alış-verişə davam et": "Continue shopping",
+    "Sifarişə bax": "View order"
 }

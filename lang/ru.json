@@ -251,5 +251,18 @@
     "istəyə bağlı": "необязательно",
     "Rəng, ölçü və ya sualınız": "Цвет, размер или ваш вопрос",
     "Ödəniş məhsulu təhvil alanda edilir.": "Оплата при получении товара.",
-    "Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.": "Произошла ошибка. Попробуйте ещё раз."
+    "Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.": "Произошла ошибка. Попробуйте ещё раз.",
+    "Təşəkkür edirik, :name! Operatorumuz sifarişi təsdiqləmək üçün qısa müddətdə sizinlə əlaqə saxlayacaq.": "Спасибо, :name! Наш оператор скоро свяжется с вами для подтверждения заказа.",
+    "Kartla ödəniş tamamlanmadı. Sifarişiniz yadda saxlanılıb — operatorumuz sizinlə əlaqə saxlayacaq və ya bizə özünüz yaza bilərsiniz.": "Оплата картой не завершена. Ваш заказ сохранён — оператор свяжется с вами, или вы можете написать нам сами.",
+    "Sifariş nömrəsi": "Номер заказа",
+    "Sifariş məlumatları": "Детали заказа",
+    "Alıcı": "Покупатель",
+    "Bundan sonra nə olacaq?": "Что дальше?",
+    "Təsdiq zəngi": "Звонок для подтверждения",
+    "Operatorumuz sifarişin detallarını dəqiqləşdirmək üçün sizə zəng edəcək.": "Оператор позвонит вам, чтобы уточнить детали заказа.",
+    "Hazırlıq": "Подготовка",
+    "Məhsullar yoxlanılır və çatdırılmaya hazırlanır.": "Товары проверяются и готовятся к доставке.",
+    "Kuryer razılaşdırılmış vaxtda sifarişi ünvanınıza gətirəcək.": "Курьер доставит заказ в согласованное время.",
+    "Alış-verişə davam et": "Продолжить покупки",
+    "Sifarişə bax": "Посмотреть заказ"
 }
