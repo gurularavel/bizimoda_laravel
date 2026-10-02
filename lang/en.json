@@ -246,5 +246,10 @@
     "Bağla": "Close",
     "Çərəzlər": "Cookies",
     "Çərəzlərdən istifadə edirik": "We use cookies",
-    "Qəbul edirəm": "Accept"
+    "Qəbul edirəm": "Accept",
+    "Adınızı və telefon nömrənizi yazın — operatorumuz sifarişi təsdiqləmək üçün sizinlə əlaqə saxlayacaq.": "Enter your name and phone number — our operator will contact you to confirm the order.",
+    "istəyə bağlı": "optional",
+    "Rəng, ölçü və ya sualınız": "Colour, size or your question",
+    "Ödəniş məhsulu təhvil alanda edilir.": "Payment is made on delivery.",
+    "Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.": "Something went wrong. Please try again."
 }

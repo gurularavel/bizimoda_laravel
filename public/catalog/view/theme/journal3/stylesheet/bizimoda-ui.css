@@ -514,3 +514,66 @@ html body .module-notification-137.bz-cookie .notification-close.btn:hover {
   .bz-cookie__accept { width: 100%; }
   html body .module-notification-137.bz-cookie .notification-close.btn { top: 8px; right: 8px; }
 }
+
+/* ==========================================================================
+   "Bir kliklə al" modalı (module-popup-22)
+   ========================================================================== */
+/* Çərçivə (valideyn səhifədə) */
+html body .module-popup-22 .popup-container {
+  width: 440px !important; max-width: calc(100vw - 24px) !important; padding: 0 !important; overflow: hidden;
+  border-radius: 18px !important; background: #fff !important; box-shadow: 0 40px 80px -20px rgba(16, 24, 40, .45) !important;
+}
+html body .module-popup-22 .popup-body { position: relative; z-index: 1; padding: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+html body .module-popup-22 .popup-inner-body { max-height: calc(100vh - 48px) !important; overflow-y: auto !important; transition: height .2s ease; }
+html body .module-popup-22 .popup-inner-body iframe { display: block; width: 100%; }
+html body .module-popup-22 .popup-container > .popup-close {
+  position: absolute !important; top: 12px !important; right: 12px !important; z-index: 20 !important;
+  width: 34px !important; height: 34px !important; margin: 0 !important; transform: none !important;
+  border-radius: 50% !important; background: var(--bz-soft) !important; border: 0 !important; box-shadow: none !important;
+}
+html body .module-popup-22 .popup-container > .popup-close::before { content: '\e5cd' !important; color: var(--bz-ink) !important; font-size: 16px !important; }
+html body .module-popup-22 .popup-container > .popup-close:hover { background: var(--bz-line) !important; }
+html body .module-popup-22 .popup-bg { background: rgba(16, 24, 40, .55) !important; backdrop-filter: blur(2px); }
+
+/* Məzmun (iframe daxilində) */
+html.module-popup-22 body { background: #fff !important; }
+html.module-popup-22 .site-wrapper { padding: 0 !important; }
+.bz-oneclick { padding: 28px 28px 24px; font: 400 14px/1.5 var(--bz-font); color: var(--bz-text); }
+.bz-oneclick [hidden] { display: none !important; }
+.bz-oneclick__head { margin-bottom: 18px; text-align: center; }
+.bz-oneclick__badge, .bz-oneclick__check {
+  display: inline-flex; align-items: center; justify-content: center; margin-bottom: 12px;
+  width: 48px; height: 48px; border-radius: 14px; background: var(--bz-brand-soft); color: var(--bz-brand);
+}
+.bz-oneclick__title { margin: 0 0 6px; font: 700 21px/1.25 var(--bz-head); color: var(--bz-ink); }
+.bz-oneclick__head p, .bz-oneclick__done p { margin: 0 auto; max-width: 340px; font-size: 13.5px; line-height: 1.45; color: var(--bz-muted); }
+
+.bz-oneclick__product {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 18px; padding: 10px;
+  border: 1px solid var(--bz-line); border-radius: 12px; background: var(--bz-soft);
+}
+.bz-oneclick__thumb { flex: none; width: 56px; height: 56px; border-radius: 9px; overflow: hidden; background: #fff; }
+.bz-oneclick__thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.bz-oneclick__info { min-width: 0; }
+.bz-oneclick__name {
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  font: 500 13.5px/1.35 var(--bz-font); color: var(--bz-ink);
+}
+.bz-oneclick__price { display: flex; align-items: baseline; gap: 8px; margin-top: 3px; }
+.bz-oneclick__price .bz-price { font: 700 15px/1.2 var(--bz-font); color: var(--bz-brand); }
+.bz-oneclick__price .bz-price-old { font-size: 12.5px; color: var(--bz-muted); text-decoration: line-through; }
+.bz-oneclick__price .bz-price-old:empty { display: none; }
+
+.bz-oneclick__form { display: flex; flex-direction: column; gap: 14px; }
+.bz-oneclick__form .bz-btn { margin-top: 4px; }
+.bz-oneclick__form .bz-btn.is-loading { opacity: .7; pointer-events: none; }
+.bz-oneclick__opt { font-weight: 400; color: var(--bz-muted); }
+.bz-oneclick__note { display: flex; align-items: center; justify-content: center; gap: 6px; margin: 0; font-size: 12.5px; color: var(--bz-muted); }
+
+.bz-oneclick__done { text-align: center; padding: 8px 0 0; }
+.bz-oneclick__check { width: 64px; height: 64px; border-radius: 50%; background: var(--bz-green-soft); color: var(--bz-green); }
+.bz-oneclick__done p { margin-bottom: 20px; }
+
+@media (max-width: 380px) {
+  .bz-oneclick { padding: 22px 16px 18px; }
+}

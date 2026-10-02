@@ -64,9 +64,14 @@
 	// "Bir kliklə al" popup-ı (iframe) hansı məhsul üçün açıldığını bilsin
 	$(document).on('click', '.btn-extra', function () {
 		var $thumb = $(this).closest('.bz-card, .product-thumb');
+		var $scope = $thumb.length ? $thumb : $('.product-info').first();
+		var $img = $thumb.length ? $thumb.find('.bz-card__img-first, .image img').first() : $('.product-image .main-image img').first();
 		window.__popup_product = {
 			id: $(this).data('product_id'),
-			name: $.trim($thumb.length ? $thumb.find('.bz-card__name, .name a').first().text() : $('#product .page-title').first().text())
+			name: $.trim($thumb.length ? $thumb.find('.bz-card__name, .name a').first().text() : $('.page-title').first().text()),
+			image: $img.attr('src') || '',
+			price: $.trim($scope.find('.bz-card__price .bz-price, .js-unit-price').first().text()),
+			oldPrice: $.trim($scope.find('.bz-card__price .bz-price-old, .js-unit-old-price').first().text())
 		};
 	});
 

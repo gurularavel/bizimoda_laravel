@@ -1,6 +1,6 @@
 <html>
 <head>
-  <style>.module-popup-22 .popup-container{width:500px}.module-popup-22 .popup-inner-body{height:420px}@media (max-width: 470px){.module-popup-22 .popup-inner-body{height:480px}}</style>
+  <style>.module-popup-22 .popup-inner-body{height:560px}</style>
 </head>
 <body>
   <div class="popup-wrapper module module-popup module-popup-22 popup-iframe" data-options='{"showAfter":"","hideAfter":"","cookie":"oneclick","doNotShowAgain":false,"doNotShowAgainChecked":false}'>
