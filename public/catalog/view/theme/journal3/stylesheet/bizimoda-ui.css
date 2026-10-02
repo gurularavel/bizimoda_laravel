@@ -444,7 +444,6 @@
    Cookie bildirişi (layout-dakı .module-notification-137)
    ========================================================================== */
 html body .notification-wrapper-bottom .module-notification-137.bz-cookie {
-  display: block;
   width: calc(100% - 40px);
   max-width: 760px;
   margin: 0 20px;
